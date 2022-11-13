@@ -17,7 +17,7 @@ string [] FillArray (string [] array)
 }
 FillArray(arrayCharsAndDigits);
 
-
+Console.WriteLine("Изначльный массив:");
 void PrintArray(string[]array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -26,3 +26,13 @@ void PrintArray(string[]array)
     }
 }
 PrintArray(arrayCharsAndDigits);
+
+Console.WriteLine("Измененный массив:");
+void PrintOnly3Str(string[]array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) {Console.WriteLine(array[i]);}
+    }
+}
+PrintOnly3Str(arrayCharsAndDigits);
