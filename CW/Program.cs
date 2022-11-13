@@ -5,7 +5,7 @@ string [] FillArray (string [] array)
 {
     for (int i = 0; i < array.Length; i ++)
     {
-        char [] CharsArray = new char [new Random().Next(1,5)];
+        char [] CharsArray = new char [new Random().Next(1,9)];
         for (int k = 0; k < CharsArray.Length; k++)
         {
             CharsArray[k] = Convert.ToChar(new Random().Next(33, 123));
