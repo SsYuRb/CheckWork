@@ -16,3 +16,13 @@ string [] FillArray (string [] array)
     return array;
 }
 FillArray(arrayCharsAndDigits);
+
+
+void PrintArray(string[]array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine(array[i]);
+    }
+}
+PrintArray(arrayCharsAndDigits);
